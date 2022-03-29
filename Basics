@@ -1,0 +1,77 @@
+datatype
+int
+float32
+
+
+variable declaration
+
+#declarating variable at package level
+var i float32=42.67
+
+#packing variable into one block
+var(
+
+   a string="rani"
+   b string="rishika"
+
+)
+
+variable declaration
+1 . var i int
+    i=42
+2. i:=42 // this will find this out itself 
+3. var i int =67
+
+
+#shadowing
+var a int = 20
+
+func main() {
+
+	var b int = 80
+	fmt.Println(b)
+	fmt.Println("Hello, 世界")
+}
+this code will print b=80 
+
+
+# go code will throw an erroe if you declare a variable and not use it
+
+# package level lower case--scope to the package means any file in package can access it
+# package level upper case--globally visiblr
+# block scope
+
+#naming condition
+1. length of variable should be equal to life span
+2. make acroynms in uppercase
+
+
+#conversion of one type to anothore
+package main
+
+import "fmt"
+
+func main() {
+	 var i int=42
+	 fmt.Println("%v,%T",i,i)
+	 var j string
+	 j=string(i)
+	 fmt.Println("%v,%T",j,j)
+
+	fmt.Println("Hello, 世界")
+}
+
+#this will give an error +
+
+
+package main
+import
+(
+"fmt"
+)
+
+
+Println--function
+Printf("%v,%T")--formated string
+%v==value
+%T=type of variable
